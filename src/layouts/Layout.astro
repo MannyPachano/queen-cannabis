@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+
+// Self-hosted fonts — latin subsets only (smaller bundles than full unicode ranges)
+import '@fontsource/allura/latin-400.css';
+import '@fontsource/manrope/latin-300.css';
+import '@fontsource/manrope/latin-400.css';
+import '@fontsource/manrope/latin-500.css';
+import '@fontsource/manrope/latin-600.css';
+import '@fontsource/manrope/latin-700.css';
+import '@fontsource/syne/latin-400.css';
+import '@fontsource/syne/latin-500.css';
+import '@fontsource/syne/latin-600.css';
+import '@fontsource/syne/latin-700.css';
+import '@fontsource/syne/latin-800.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Queen Cannabis — Restaurant & Lounge · Rawai, Phuket',
+  description = 'Restaurant, lounge, and premium cannabis in Rawai — open daily 8 AM to 2 AM.',
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

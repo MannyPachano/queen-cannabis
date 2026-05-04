@@ -1,0 +1,577 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ResponsivePhoto from '../components/ResponsivePhoto.astro';
+import exteriorHero from '../assets/images/exterior-hero.webp';
+import loungeDayStaff from '../assets/images/lounge-day-staff.webp';
+import flowerJars from '../assets/images/flower-jars.webp';
+import foodStaff from '../assets/images/food-staff.webp';
+import barStaff from '../assets/images/bar-staff.webp';
+import glassware from '../assets/images/glassware.webp';
+import loungeInterior from '../assets/images/lounge-interior.webp';
+import houseCat from '../assets/images/house-cat.webp';
+import loungeSignFood from '../assets/images/lounge-sign-food.webp';
+import gamingPs5 from '../assets/images/gaming-ps5.webp';
+import velvetSeats from '../assets/images/velvet-seats.webp';
+import exteriorDetail from '../assets/images/exterior-detail.webp';
+import staffPortrait from '../assets/images/staff-portrait.webp';
+---
+
+<Layout>
+<!-- ============ NAV ============ -->
+<nav class="top" id="topnav">
+  <a href="#" class="brand">
+    <svg class="crown" viewBox="0 0 345 282" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g transform="translate(0,282) scale(0.1,-0.1)" fill="currentColor">
+        <path d="M1581 2786 c-13 -14 -26 -40 -30 -58 -14 -68 27 -191 87 -260 l32 -36 -33 -36 c-20 -22 -43 -36 -57 -36 -43 0 -109 -40 -147 -90 l-38 -49 -97 -1 c-103 0 -268 -27 -362 -60 -153 -52 -299 -164 -356 -272 -24 -45 -27 -48 -95 -64 -173 -42 -341 -125 -391 -193 -52 -71 -84 -164 -84 -244 0 -105 38 -186 150 -317 66 -77 130 -170 130 -189 0 -9 -21 -25 -50 -38 -82 -36 -110 -105 -70 -171 28 -45 73 -62 170 -62 44 0 80 -4 80 -9 0 -11 -35 -39 -77 -62 -60 -33 -48 -90 21 -108 51 -13 46 -1 87 -190 l23 -103 35 5 c20 3 110 19 201 36 401 73 641 96 1015 96 384 0 595 -22 1102 -112 84 -15 155 -24 159 -21 3 4 16 63 29 133 24 129 35 155 64 155 31 0 61 30 61 61 0 23 -7 34 -31 47 -101 56 -103 78 -7 74 90 -5 139 9 172 49 47 55 29 125 -43 169 -83 50 -79 43 -53 92 12 24 54 80 93 124 133 151 168 224 169 346 0 136 -58 238 -181 318 -50 32 -205 91 -319 120 -40 10 -49 18 -70 58 -43 82 -144 173 -246 224 -127 63 -338 108 -511 108 -45 0 -52 4 -98 51 -56 57 -111 89 -151 89 -18 0 -39 12 -61 35 l-33 35 40 58 c67 99 93 166 87 225 -3 39 -11 56 -31 74 -34 29 -64 29 -108 -1 l-34 -23 -28 23 c-36 32 -85 32 -115 0z m372 -670 c43 -17 101 -85 115 -135 17 -56 15 -121 -7 -182 -11 -30 -89 -191 -173 -359 l-154 -306 -144 278 c-188 361 -210 410 -210 475 0 116 71 223 148 223 58 0 142 -63 179 -135 l16 -29 24 49 c29 58 56 91 98 116 36 22 64 24 108 5z m-791 -67 c-16 -24 -34 -59 -41 -78 -14 -43 -14 -158 0 -219 19 -79 111 -260 223 -439 58 -93 106 -173 106 -176 0 -3 -13 -8 -30 -11 -16 -3 -44 -9 -60 -12 -88 -17 -119 -104 -59 -163 43 -44 117 -58 197 -38 31 8 32 8 32 -25 0 -58 -11 -64 -185 -92 -214 -35 -230 -35 -255 6 -32 52 -27 68 20 68 52 0 103 21 124 51 20 29 21 102 1 133 -24 37 -86 59 -145 54 -61 -6 -49 -24 -143 207 -128 315 -120 291 -121 395 -1 85 2 101 27 152 30 60 85 115 152 151 58 31 179 86 183 82 2 -1 -10 -22 -26 -46z m1179 15 c102 -42 139 -63 189 -110 70 -65 94 -127 94 -239 0 -104 -13 -144 -136 -434 l-74 -175 -70 0 c-81 -1 -116 -18 -141 -71 -14 -29 -14 -41 -4 -74 16 -54 59 -83 128 -89 53 -4 54 -5 48 -31 -3 -14 -13 -37 -22 -50 -14 -22 -20 -23 -77 -18 -67 7 -335 53 -341 59 -2 2 -7 23 -11 47 l-7 44 29 -9 c57 -17 139 -10 178 16 64 44 76 112 26 153 -28 24 -40 28 -122 42 l-37 6 28 47 c15 26 63 103 106 172 163 262 215 385 215 507 0 84 -11 125 -50 186 -16 26 -26 47 -22 47 5 0 37 -12 73 -26z m-1801 -416 c16 -82 41 -143 105 -258 29 -52 70 -126 91 -165 21 -38 50 -92 66 -118 19 -33 24 -49 15 -52 -103 -32 -119 -40 -146 -70 -16 -19 -32 -43 -36 -55 -5 -15 -12 -19 -23 -15 -10 4 -47 10 -84 12 -54 5 -69 9 -73 24 -3 10 -29 53 -57 96 -28 43 -67 112 -87 153 -34 71 -36 81 -36 175 0 89 4 106 27 150 14 28 44 66 65 87 42 40 130 98 149 98 6 0 17 -28 24 -62z m2448 33 c202 -103 249 -332 112 -551 -22 -36 -57 -95 -78 -132 l-37 -66 -65 -4 c-36 -3 -72 -8 -80 -12 -10 -4 -21 5 -35 31 -23 43 -71 78 -129 95 -23 6 -44 14 -49 18 -4 3 31 71 79 151 138 232 185 333 200 436 7 48 11 63 20 63 2 0 30 -13 62 -29z m-2163 -906 l90 -2 3 -30 c2 -23 -2 -33 -15 -36 -10 -3 -87 -22 -172 -43 l-154 -37 -19 23 c-28 35 -22 46 38 70 30 13 63 34 71 47 13 20 21 23 42 17 14 -4 67 -8 116 -9z m1961 -12 c12 -12 45 -33 73 -47 28 -15 51 -30 51 -35 0 -5 -9 -19 -19 -32 l-19 -24 -154 39 c-84 21 -161 40 -170 43 -13 3 -18 15 -18 41 l0 37 117 0 c107 0 119 -2 139 -22z"/>
+      </g>
+    </svg>
+    Queen Cannabis
+  </a>
+  <div class="menu">
+    <a href="#story">Story</a>
+    <a href="#offerings">Offerings</a>
+    <a href="#lounge">The Lounge</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+  </div>
+  <a href="#visit" class="visit-btn">Visit</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div
+    class="hero-bg-img"
+    style={`--hero-bg: url("${encodeURI(exteriorHero.src)}")`}
+  ></div>
+  <div class="hero-bg-overlay"></div>
+
+  <div class="hero-content">
+    <svg class="crown-svg" viewBox="0 0 345 282" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g transform="translate(0,282) scale(0.1,-0.1)" fill="currentColor">
+        <path d="M1581 2786 c-13 -14 -26 -40 -30 -58 -14 -68 27 -191 87 -260 l32 -36 -33 -36 c-20 -22 -43 -36 -57 -36 -43 0 -109 -40 -147 -90 l-38 -49 -97 -1 c-103 0 -268 -27 -362 -60 -153 -52 -299 -164 -356 -272 -24 -45 -27 -48 -95 -64 -173 -42 -341 -125 -391 -193 -52 -71 -84 -164 -84 -244 0 -105 38 -186 150 -317 66 -77 130 -170 130 -189 0 -9 -21 -25 -50 -38 -82 -36 -110 -105 -70 -171 28 -45 73 -62 170 -62 44 0 80 -4 80 -9 0 -11 -35 -39 -77 -62 -60 -33 -48 -90 21 -108 51 -13 46 -1 87 -190 l23 -103 35 5 c20 3 110 19 201 36 401 73 641 96 1015 96 384 0 595 -22 1102 -112 84 -15 155 -24 159 -21 3 4 16 63 29 133 24 129 35 155 64 155 31 0 61 30 61 61 0 23 -7 34 -31 47 -101 56 -103 78 -7 74 90 -5 139 9 172 49 47 55 29 125 -43 169 -83 50 -79 43 -53 92 12 24 54 80 93 124 133 151 168 224 169 346 0 136 -58 238 -181 318 -50 32 -205 91 -319 120 -40 10 -49 18 -70 58 -43 82 -144 173 -246 224 -127 63 -338 108 -511 108 -45 0 -52 4 -98 51 -56 57 -111 89 -151 89 -18 0 -39 12 -61 35 l-33 35 40 58 c67 99 93 166 87 225 -3 39 -11 56 -31 74 -34 29 -64 29 -108 -1 l-34 -23 -28 23 c-36 32 -85 32 -115 0z m372 -670 c43 -17 101 -85 115 -135 17 -56 15 -121 -7 -182 -11 -30 -89 -191 -173 -359 l-154 -306 -144 278 c-188 361 -210 410 -210 475 0 116 71 223 148 223 58 0 142 -63 179 -135 l16 -29 24 49 c29 58 56 91 98 116 36 22 64 24 108 5z m-791 -67 c-16 -24 -34 -59 -41 -78 -14 -43 -14 -158 0 -219 19 -79 111 -260 223 -439 58 -93 106 -173 106 -176 0 -3 -13 -8 -30 -11 -16 -3 -44 -9 -60 -12 -88 -17 -119 -104 -59 -163 43 -44 117 -58 197 -38 31 8 32 8 32 -25 0 -58 -11 -64 -185 -92 -214 -35 -230 -35 -255 6 -32 52 -27 68 20 68 52 0 103 21 124 51 20 29 21 102 1 133 -24 37 -86 59 -145 54 -61 -6 -49 -24 -143 207 -128 315 -120 291 -121 395 -1 85 2 101 27 152 30 60 85 115 152 151 58 31 179 86 183 82 2 -1 -10 -22 -26 -46z m1179 15 c102 -42 139 -63 189 -110 70 -65 94 -127 94 -239 0 -104 -13 -144 -136 -434 l-74 -175 -70 0 c-81 -1 -116 -18 -141 -71 -14 -29 -14 -41 -4 -74 16 -54 59 -83 128 -89 53 -4 54 -5 48 -31 -3 -14 -13 -37 -22 -50 -14 -22 -20 -23 -77 -18 -67 7 -335 53 -341 59 -2 2 -7 23 -11 47 l-7 44 29 -9 c57 -17 139 -10 178 16 64 44 76 112 26 153 -28 24 -40 28 -122 42 l-37 6 28 47 c15 26 63 103 106 172 163 262 215 385 215 507 0 84 -11 125 -50 186 -16 26 -26 47 -22 47 5 0 37 -12 73 -26z m-1801 -416 c16 -82 41 -143 105 -258 29 -52 70 -126 91 -165 21 -38 50 -92 66 -118 19 -33 24 -49 15 -52 -103 -32 -119 -40 -146 -70 -16 -19 -32 -43 -36 -55 -5 -15 -12 -19 -23 -15 -10 4 -47 10 -84 12 -54 5 -69 9 -73 24 -3 10 -29 53 -57 96 -28 43 -67 112 -87 153 -34 71 -36 81 -36 175 0 89 4 106 27 150 14 28 44 66 65 87 42 40 130 98 149 98 6 0 17 -28 24 -62z m2448 33 c202 -103 249 -332 112 -551 -22 -36 -57 -95 -78 -132 l-37 -66 -65 -4 c-36 -3 -72 -8 -80 -12 -10 -4 -21 5 -35 31 -23 43 -71 78 -129 95 -23 6 -44 14 -49 18 -4 3 31 71 79 151 138 232 185 333 200 436 7 48 11 63 20 63 2 0 30 -13 62 -29z m-2163 -906 l90 -2 3 -30 c2 -23 -2 -33 -15 -36 -10 -3 -87 -22 -172 -43 l-154 -37 -19 23 c-28 35 -22 46 38 70 30 13 63 34 71 47 13 20 21 23 42 17 14 -4 67 -8 116 -9z m1961 -12 c12 -12 45 -33 73 -47 28 -15 51 -30 51 -35 0 -5 -9 -19 -19 -32 l-19 -24 -154 39 c-84 21 -161 40 -170 43 -13 3 -18 15 -18 41 l0 37 117 0 c107 0 119 -2 139 -22z"/>
+      </g>
+    </svg>
+
+    <h1>
+      Queen
+      <span class="line2">Cannabis</span>
+    </h1>
+
+    <div class="establishment">Rawai <span class="dot">●</span> Phuket <span class="dot">●</span> Open 'til 2 AM</div>
+
+    <p class="tagline">
+      A restaurant, a lounge, and Phuket's most-loved cannabis spot — all in one place in Rawai.
+      Come hungry, stay late.
+    </p>
+
+    <div class="cta-row">
+      <a href="#visit" class="btn solid">Get Directions</a>
+      <a href="#lounge" class="btn ghost">See Inside</a>
+    </div>
+
+    <div class="scroll-cue">Scroll</div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="strip">
+  <div class="strip-track">
+    <div class="strip-item">Premium Flower<span class="heart">✦</span></div>
+    <div class="strip-item">Kitchen & Bar<span class="heart">✦</span></div>
+    <div class="strip-item">Open 'til 2 AM<span class="heart">✦</span></div>
+    <div class="strip-item">PS5 + Board Games<span class="heart">✦</span></div>
+    <div class="strip-item">House Cats<span class="heart">✦</span></div>
+    <div class="strip-item">Walk to Nai Harn<span class="heart">✦</span></div>
+    <div class="strip-item">4.9 ★ on Google<span class="heart">✦</span></div>
+    <div class="strip-item">Premium Flower<span class="heart">✦</span></div>
+    <div class="strip-item">Kitchen & Bar<span class="heart">✦</span></div>
+    <div class="strip-item">Open 'til 2 AM<span class="heart">✦</span></div>
+    <div class="strip-item">PS5 + Board Games<span class="heart">✦</span></div>
+    <div class="strip-item">House Cats<span class="heart">✦</span></div>
+    <div class="strip-item">Walk to Nai Harn<span class="heart">✦</span></div>
+    <div class="strip-item">4.9 ★ on Google<span class="heart">✦</span></div>
+  </div>
+</div>
+
+<!-- ============ STORY ============ -->
+<section class="story" id="story">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-visual reveal">
+        <div class="neon-frame"></div>
+        <div class="photo-overlay"></div>
+        <ResponsivePhoto
+          src={loungeDayStaff}
+          alt="The Queen Cannabis daylight lounge with the neon sign behind"
+          loading="eager"
+          fetchpriority="high"
+          sizes="(max-width: 900px) min(380px, 100vw), min(560px, 45vw)"
+          widths={[560, 840, 1120, 1600]}
+        />
+        <div class="photo-caption">Soi Saiyuan, est. 2022</div>
+      </div>
+
+      <div class="story-text reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2>Three years in Rawai. <span class="accent">Still the same welcome.</span></h2>
+        <p>
+          Queen started small — one room, one bar, a few jars on the counter.
+          The idea was simple: make people feel like regulars from the first visit.
+          Three years and 4.9 stars later, that's still how we run it.
+        </p>
+        <p>
+          These days the room is bigger. Plant walls, pink and cyan neon, velvet sofas,
+          a full kitchen, a bar, a PlayStation, and a few cats who run the place.
+        </p>
+        <p>
+          Whether you're here for ten minutes or until close, the welcome is the same.
+        </p>
+        <div class="signature">
+          <div class="name">Mimi</div>
+          <div class="role">Owner · Queen Cannabis</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFERINGS ============ -->
+<section class="offerings" id="offerings">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">What's Here</span>
+      <h2>More Than a <span class="alt">Dispensary</span></h2>
+      <p class="sub">A kitchen, a bar, a flower selection, and a glass shop — under one roof.</p>
+    </div>
+
+    <div class="off-grid">
+      <div class="off-card reveal">
+        <div class="photo">
+          <ResponsivePhoto
+            src={flowerJars}
+            alt="Rows of cannabis strain jars at Queen Cannabis"
+            sizes="(max-width: 1100px) min(92vw, 520px), min(280px, 24vw)"
+            widths={[480, 720, 960, 1280]}
+          />
+        </div>
+        <div class="body">
+          <div class="num">i.</div>
+          <h3>The <span class="h3-script">Flower</span></h3>
+          <p>
+            Dozens of strains lined up in jars at the bar. Indica, sativa, hybrid.
+            Rotating promos. Ask whoever's working — they know the menu cold.
+          </p>
+        </div>
+      </div>
+
+      <div class="off-card reveal">
+        <div class="photo">
+          <ResponsivePhoto
+            src={foodStaff}
+            alt="Thai food and burgers served at Queen Cannabis restaurant"
+            sizes="(max-width: 1100px) min(92vw, 520px), min(280px, 24vw)"
+            widths={[480, 720, 960, 1280]}
+          />
+        </div>
+        <div class="body">
+          <div class="num">ii.</div>
+          <h3>The <span class="h3-script">Kitchen</span></h3>
+          <p>
+            Burgers, fries, papaya salad, fruit shakes. Open as long as we are.
+          </p>
+        </div>
+      </div>
+
+      <div class="off-card reveal">
+        <div class="photo">
+          <ResponsivePhoto
+            src={barStaff}
+            alt="Full bar with bottles and pendant lighting at Queen Cannabis"
+            sizes="(max-width: 1100px) min(92vw, 520px), min(280px, 24vw)"
+            widths={[480, 720, 960, 1280]}
+          />
+        </div>
+        <div class="body">
+          <div class="num">iii.</div>
+          <h3>The <span class="h3-script">Bar</span></h3>
+          <p>
+            Spirits, wine, beer, coffee. Pull up a stool or take a table — we're open until 2 AM.
+          </p>
+        </div>
+      </div>
+
+      <div class="off-card reveal">
+        <div class="photo">
+          <ResponsivePhoto
+            src={glassware}
+            alt="Glass bongs and accessories on display at Queen Cannabis"
+            sizes="(max-width: 1100px) min(92vw, 520px), min(280px, 24vw)"
+            widths={[480, 720, 960, 1280]}
+          />
+        </div>
+        <div class="body">
+          <div class="num">iv.</div>
+          <h3>Glass & <span class="h3-script">Gear</span></h3>
+          <p>
+            Bongs, papers, grinders, lighters. Everything you need, nothing you don't.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE LOUNGE ============ -->
+<section class="lounge" id="lounge">
+  <div class="container">
+    <div class="lounge-grid">
+      <div class="lounge-text reveal">
+        <span class="eyebrow">Inside</span>
+        <h2>Stay <span class="accent">a while.</span></h2>
+        <p>
+          Past the entrance: plant walls, velvet sofas in pink and navy, fairy lights,
+          and a wall of neon signs that say what you came to hear — hello gorgeous,
+          you are amazing.
+        </p>
+        <div class="amenity-grid">
+          <div class="amenity">
+            <div class="label">Velvet Sofas</div>
+            <div class="sub">Pink & navy · all hours</div>
+          </div>
+          <div class="amenity">
+            <div class="label">PlayStation 5</div>
+            <div class="sub">FIFA, racing, fighting, more</div>
+          </div>
+          <div class="amenity">
+            <div class="label">Board Games</div>
+            <div class="sub">From quick to all-night</div>
+          </div>
+          <div class="amenity">
+            <div class="label">Full Kitchen</div>
+            <div class="sub">Thai, burgers, shakes, coffee</div>
+          </div>
+          <div class="amenity">
+            <div class="label">House Cats</div>
+            <div class="sub">They run the place</div>
+          </div>
+          <div class="amenity">
+            <div class="label">Open Late</div>
+            <div class="sub">Every night until 2 AM</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lounge-visual reveal">
+        <div class="neon-frame"></div>
+        <div class="gradient-overlay"></div>
+        <ResponsivePhoto
+          src={loungeInterior}
+          alt="The Queen Cannabis main lounge with plant wall and pink neon signs"
+          sizes="(max-width: 1100px) min(92vw, 520px), min(520px, 48vw)"
+          widths={[560, 840, 1120, 1600]}
+        />
+        <div class="label-tag">hello gorgeous.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOUSE CATS ============ -->
+<section class="cats">
+  <div class="cats-grid">
+    <div class="cats-photo reveal">
+      <div class="neon-frame"></div>
+      <ResponsivePhoto
+        src={houseCat}
+        alt="A resident house cat at Queen Cannabis"
+        sizes="(max-width: 900px) min(380px, 100vw), min(520px, 45vw)"
+        widths={[560, 840, 1120]}
+      />
+    </div>
+    <div class="cats-text reveal">
+      <span class="eyebrow">Important Staff</span>
+      <h2>The <span class="alt">House Cats</span></h2>
+      <p>
+        A few cats live here. They'll pick your seat for you. They'll watch you play PS5.
+        They have opinions about your music.
+      </p>
+      <p>
+        Reviewers mention them in basically every Google review. They're part of the welcome.
+      </p>
+      <p>
+        If one curls up next to you, you're in.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">A Look Around</span>
+      <h2>The <span class="alt">Place</span> in Pictures</h2>
+      <p class="sub">Lounge, bar, kitchen, neon, plants, cats. Everything.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item g1">
+        <ResponsivePhoto
+          src={loungeSignFood}
+          alt="The full Queen Cannabis sign with food on the table"
+          sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"
+          widths={[480, 720, 960, 1280]}
+        />
+        <div class="caption">Dinner & a sign.</div>
+      </div>
+      <div class="gallery-item g2">
+        <ResponsivePhoto
+          src={gamingPs5}
+          alt="The PlayStation 5 gaming corner"
+          sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"
+          widths={[480, 720, 960, 1280]}
+        />
+        <div class="caption">PS5 corner.</div>
+      </div>
+      <div class="gallery-item g3">
+        <ResponsivePhoto
+          src={velvetSeats}
+          alt="The pink and navy velvet seating area"
+          sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"
+          widths={[480, 720, 960, 1280]}
+        />
+        <div class="caption">The pink chairs.</div>
+      </div>
+      <div class="gallery-item g4">
+        <ResponsivePhoto
+          src={exteriorDetail}
+          alt="The lit-up exterior with neon and string lights"
+          sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"
+          widths={[480, 720, 960, 1280]}
+        />
+        <div class="caption">After dark.</div>
+      </div>
+      <div class="gallery-item g5">
+        <ResponsivePhoto
+          src={staffPortrait}
+          alt="A friendly staff member at the bar"
+          sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"
+          widths={[480, 720, 960, 1280]}
+        />
+        <div class="caption">The bar staff.</div>
+      </div>
+      <div class="gallery-item g6">
+        <ResponsivePhoto
+          src={flowerJars}
+          alt="Rows of premium flower jars"
+          sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"
+          widths={[480, 720, 960, 1280]}
+        />
+        <div class="caption">The flower bar.</div>
+      </div>
+      <div class="gallery-item g7">
+        <ResponsivePhoto
+          src={barStaff}
+          alt="The bar with bottles and pendant lighting"
+          sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"
+          widths={[480, 720, 960, 1280]}
+        />
+        <div class="caption">The drinks.</div>
+      </div>
+      <div class="gallery-item g8">
+        <ResponsivePhoto
+          src={glassware}
+          alt="Coloured glass pieces on display"
+          sizes="(max-width: 768px) 100vw, (max-width: 1100px) 50vw, 33vw"
+          widths={[480, 720, 960, 1280]}
+        />
+        <div class="caption">The glass.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimony">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">From Google</span>
+      <h2>What people <span class="alt">say.</span></h2>
+    </div>
+
+    <div class="reveal">
+      <div class="stars-row">★ ★ ★ ★ ★</div>
+      <p class="rating-line"><strong>4.9 stars</strong> · 320+ Google reviews</p>
+    </div>
+
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <span class="qmark">"</span>
+        <blockquote>
+          Absolute gem of a shop — for sure one of the best in Phuket. Atmosphere is
+          super calm and chill, aesthetics are on point and the buds are absolutely
+          top range. Also kitty cats with cute bandannas. Fantastic environment for chilling out.
+        </blockquote>
+        <div class="attrib">Google review</div>
+      </div>
+
+      <div class="test-card reveal">
+        <span class="qmark">"</span>
+        <blockquote>
+          If you step here, know that you're going to come back again. Cozy and chill,
+          you feel like home. Greens, PS5, snacks, food, and pets. Mimi will never
+          let you go without a gift. My number one spot to chill in Phuket.
+        </blockquote>
+        <div class="attrib">Google review</div>
+      </div>
+
+      <div class="test-card reveal">
+        <span class="qmark">"</span>
+        <blockquote>
+          The cannabis is of good quality, the shop is beautifully decorated, and the
+          staff greet customers politely in the morning. Inside there are toys and
+          games — with thoughtful promotions throughout.
+        </blockquote>
+        <div class="attrib">Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section class="visit" id="visit">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">Visit</span>
+      <h2>Come <span class="alt">find us.</span></h2>
+    </div>
+
+    <div class="visit-grid">
+      <div class="visit-info reveal">
+        <div class="visit-block">
+          <div class="label">The Place</div>
+          <div class="value">Queen Cannabis · Restaurant & Lounge</div>
+        </div>
+        <div class="visit-block">
+          <div class="label">Address</div>
+          <div class="value">Soi Saiyuan, Rawai</div>
+          <div class="sub">Mueang Phuket District, Phuket 83100, Thailand</div>
+        </div>
+        <div class="visit-block">
+          <div class="label">Hours</div>
+          <div class="value">Daily · 8 AM to 2 AM</div>
+          <div class="sub">Yes, even Sundays</div>
+        </div>
+        <div class="visit-block">
+          <div class="label">Getting Here</div>
+          <div class="value">5 minutes from Nai Harn Beach</div>
+          <div class="sub">Easy walk, easy ride</div>
+        </div>
+        <div class="visit-block" style="padding-top: 2rem; border: none;">
+          <a href="https://www.google.com/maps/search/?api=1&query=Queen+Cannabis+Rawai+Phuket&query_place_id=ChIJf6vvGrYpUDARno9ZMGtYwkM" target="_blank" rel="noopener" class="btn solid">Open in Google Maps</a>
+        </div>
+      </div>
+
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.7!2d98.31764!3d7.7856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305029b61aef8b7f%3A0x43c2586b30598f9e!2sQueen%20Cannabis!5e0!3m2!1sen!2sth!4v1700000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPLIANCE ============ -->
+<section class="compliance">
+  <div class="container-narrow">
+    <svg class="seal" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="30" cy="30" r="26"/>
+      <circle cx="30" cy="30" r="20"/>
+      <path d="M22,30 L28,36 L40,24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"/>
+    </svg>
+    <span class="eyebrow">The Legal Bit</span>
+    <p>
+      Queen Cannabis operates under Thailand's Ministry of Public Health regulations on controlled herbs (2025).
+      Adults 20+ only. Consume responsibly and only where it's permitted.
+    </p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <div class="footer-brand">Queen Cannabis</div>
+        <div class="footer-subtitle">Restaurant · Lounge · Cannabis</div>
+        <p class="footer-tagline">
+          Restaurant, bar, premium cannabis, and the best welcome in Rawai.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#offerings">Offerings</a></li>
+          <li><a href="#lounge">The Lounge</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li>Soi Saiyuan, Rawai</li>
+          <li>Phuket 83100, Thailand</li>
+          <li>Daily · 8 AM – 2 AM</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Queen+Cannabis+Rawai+Phuket&query_place_id=ChIJf6vvGrYpUDARno9ZMGtYwkM" target="_blank" rel="noopener">Google Maps</a></li>
+          <li><a href="https://www.facebook.com/people/Queen-Cannabis/100089754732076/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="#visit">Get Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© Queen Cannabis · Rawai · Phuket</div>
+      <div>Adults 20+ · Consume responsibly</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function initQueenCannabisUi() {
+    const nav = document.getElementById('topnav');
+    if (!nav) return;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12 },
+    );
+    reveals.forEach((r) => io.observe(r));
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initQueenCannabisUi);
+  } else {
+    initQueenCannabisUi();
+  }
+</script>
+</Layout>

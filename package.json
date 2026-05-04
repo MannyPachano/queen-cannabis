@@ -1,0 +1,21 @@
+{
+  "name": "queen-cannabis",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@fontsource/allura": "^5.2.8",
+    "@fontsource/manrope": "^5.2.8",
+    "@fontsource/syne": "^5.2.7",
+    "astro": "^5.7.12",
+    "sharp": "^0.34.5"
+  }
+}
