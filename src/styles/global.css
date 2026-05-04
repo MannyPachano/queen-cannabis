@@ -378,25 +378,6 @@
 
   .section-title { text-align: center; margin-bottom: 4rem; }
   .section-title .eyebrow { display: block; margin-bottom: 1rem; }
-  .section-title h2 {
-    font-family: 'Allura', cursive;
-    font-weight: 400;
-    font-size: clamp(3.2rem, 7vw, 6rem);
-    line-height: 0.95;
-    color: var(--pink);
-    text-shadow:
-      0 0 4px #fff,
-      0 0 14px var(--pink),
-      0 0 36px rgba(255, 62, 165, 0.8);
-  }
-  .section-title h2 .alt {
-    color: var(--cyan);
-    text-shadow:
-      0 0 4px #fff,
-      0 0 14px var(--cyan),
-      0 0 36px rgba(94, 231, 255, 0.8);
-    font-style: normal;
-  }
   .section-title .sub {
     font-family: 'Manrope', sans-serif;
     font-size: 1rem;
@@ -463,21 +444,40 @@
   }
 
   .story-text .eyebrow { display: block; margin-bottom: 1.2rem; }
-  .story-text h2 {
+
+  /* Section duo headings: Syne + ink body, Allura pink accent (matches Our Story) */
+  .story-text h2,
+  .section-title h2,
+  .lounge-text h2,
+  .cats-text h2 {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
     font-size: clamp(2rem, 3.8vw, 3.2rem);
     line-height: 1.05;
     margin-bottom: 1.8rem;
     letter-spacing: -0.015em;
+    color: var(--ink);
   }
-  .story-text h2 .accent {
+
+  .story-text h2 .accent,
+  .section-title h2 .alt,
+  .lounge-text h2 .accent,
+  .cats-text h2 .alt {
     font-family: 'Allura', cursive;
     font-weight: 400;
     color: var(--pink);
     font-size: 1.35em;
     letter-spacing: 0;
+    font-style: normal;
     text-shadow: 0 0 14px rgba(255, 62, 165, 0.65);
+  }
+
+  .story-text h2 .accent.alt-cyan,
+  .section-title h2 .alt.alt-cyan,
+  .lounge-text h2 .accent.alt-cyan,
+  .cats-text h2 .alt.alt-cyan {
+    color: var(--cyan);
+    text-shadow: 0 0 14px rgba(94, 231, 255, 0.65);
   }
   .story-text p {
     font-size: 1.02rem;
@@ -595,22 +595,6 @@
     align-items: center;
   }
   .lounge-text .eyebrow { display: block; margin-bottom: 1.2rem; }
-  .lounge-text h2 {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: clamp(2.2rem, 4vw, 3.4rem);
-    line-height: 1.05;
-    margin-bottom: 1.8rem;
-    letter-spacing: -0.015em;
-  }
-  .lounge-text h2 .accent {
-    font-family: 'Allura', cursive;
-    font-weight: 400;
-    color: var(--cyan);
-    font-size: 1.35em;
-    letter-spacing: 0;
-    text-shadow: 0 0 14px rgba(94, 231, 255, 0.7);
-  }
   .lounge-text > p {
     font-size: 1.05rem;
     line-height: 1.75;
@@ -805,19 +789,6 @@
     pointer-events: none;
   }
   .cats-text .eyebrow { display: block; margin-bottom: 1rem; }
-  .cats-text h2 {
-    font-family: 'Allura', cursive;
-    font-weight: 400;
-    font-size: clamp(3rem, 5.5vw, 4.5rem);
-    line-height: 0.95;
-    color: var(--pink);
-    text-shadow: 0 0 4px #fff, 0 0 12px var(--pink), 0 0 32px rgba(255, 62, 165, 0.7);
-    margin-bottom: 1.5rem;
-  }
-  .cats-text h2 .alt {
-    color: var(--cyan);
-    text-shadow: 0 0 4px #fff, 0 0 12px var(--cyan), 0 0 32px rgba(94, 231, 255, 0.7);
-  }
   .cats-text p {
     font-size: 1.05rem;
     line-height: 1.7;
@@ -912,22 +883,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: stretch;
-  }
-  .visit-info h2 {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: clamp(2rem, 3.8vw, 3rem);
-    line-height: 1.05;
-    margin-bottom: 2rem;
-    letter-spacing: -0.015em;
-  }
-  .visit-info h2 .accent {
-    font-family: 'Allura', cursive;
-    color: var(--pink);
-    font-size: 1.35em;
-    font-weight: 400;
-    letter-spacing: 0;
-    text-shadow: 0 0 14px rgba(255, 62, 165, 0.65);
   }
   .visit-block {
     padding: 1.4rem 0;
