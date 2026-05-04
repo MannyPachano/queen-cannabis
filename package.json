@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "generate:favicons": "node scripts/generate-favicons.mjs"
   },
   "dependencies": {
     "@fontsource/allura": "^5.2.8",
@@ -17,5 +18,8 @@
     "@fontsource/syne": "^5.2.7",
     "astro": "^5.7.12",
     "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "png-to-ico": "^2.1.8"
   }
 }
